@@ -1,0 +1,255 @@
+/* Main styles */
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #f8f9fe;
+    border-radius: 15px;
+    padding: 15px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.mainheader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.mainheader h1 {
+    font-size: 24px;
+    color: #333;
+}
+
+.createButton,
+.searchButton,
+.dispatchselected {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+/* Move the Search button to the right */
+.searchButton {
+    margin-left: auto;
+}
+
+.firstheader h2 {
+    font-size: 16px;
+    /* Smaller font size */
+    color: #333;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.styled-table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    border-radius: 15px;
+    overflow: hidden;
+    width: 100%;
+}
+
+.firstheader,
+.details-container {
+    width: 97%;
+    background-color: white;
+    border-radius: 15px;
+    padding: 15px;
+    margin-bottom: 15px;
+    overflow-x: auto;
+    /* Add horizontal scrollbar */
+}
+
+.details-container h2 {
+    font-size: 16px;
+    /* Smaller font size */
+    color: #333;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+/* Adjusted styles for the search box */
+.search-box {
+    background-color: #f8f9fe;
+    width: 40%;
+    padding: 10px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+}
+
+/* Added background color inside the text box */
+.search-box input {
+    background-color: #f8f9fe;
+    border: none;
+    width: 100%;
+    outline: none;
+    /* Remove the border around the input box */
+}
+
+/* Adjusted styles for the search button */
+.search-box button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-left: 10px;
+}
+
+.inline-dropdowns {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+/* Styles for the dropdowns */
+.inline-dropdowns select {
+    margin-left: 10px;
+    padding: 8px;
+    /* Adjusted padding */
+    width: 120px;
+    /* Added width property */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+/* Style for the options inside the dropdown */
+.inline-dropdowns select option {
+    background-color: #fff;
+    color: #333;
+}
+
+.styled-table thead tr {
+    background-color: #f8f9fe;
+    color: black;
+    text-align: left;
+}
+
+.styled-table th,
+.styled-table td {
+    padding: 8px 10px;
+    /* Adjusted padding for table cells */
+}
+
+.styled-table tbody tr {
+    background-color: white;
+}
+
+.styled-table tbody tr.active-row {
+    font-weight: bold;
+    color: #009879;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+    background-color: white;
+}
+
+.productsummary {
+    /* background-color: #f8f9fe; */
+    width: 40%;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.dispatchselected {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-left: 10px;
+}
+
+/* Updated CSS with pagination styles */
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pagination button {
+    background-color: white;
+    border: 1px solid #ccc;
+    color: #007bff;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 5px;
+    font-size: 14px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.pagination button:hover {
+    background-color: #007bff;
+    color: white;
+}
+
+.pagination button.active-pagination {
+    background-color: #007bff;
+    color: white;
+}
+
+.pagination .arrow {
+    font-size: 18px;
+    background-color: white;
+    border: 1px solid #ccc;
+    color: #007bff;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.pagination .arrow:hover {
+    background-color: #007bff;
+    color: white;
+}
+
+.mainheader input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+@media only screen and (max-width: 1200px) {
+    .details-container {
+        width: 100%;
+        /* Adjusted width for responsiveness */
+        overflow-x: auto;
+        /* Add horizontal scrollbar */
+    }
+
+    .styled-table {
+        width: 100%;
+        /* Adjusted to 100% for responsiveness */
+    }
+}
